@@ -37,7 +37,7 @@ copyOfStructJames.age = 51
 //Value type --> Struct
 //copy --> new object --> 2 objects
 
-//Fuction && Mutating Function
+//Function && Mutating Function
 print(classJames.age)
 classJames.happyBirthday()
 print(classJames.age)
@@ -45,4 +45,31 @@ print(classJames.age)
 print(structJames.age)
 structJames.happyBirthday()
 print(structJames.age)
+
+//TUPLE
+let myTuple = (1,4)
+print(myTuple.0)
+print(myTuple.1)
+
+var myTuple2 = (1,3,5)
+myTuple2.2 = 10
+print(myTuple2.2)
+
+var myTuple3 = ("Aysegul", 100)
+
+var myTuple4 = (3, [5,6,7])
+print(myTuple4.1[2])
+
+let myString : String?
+let predefinedTuple : (String, String)
+
+predefinedTuple.0 = "Aysegul"
+predefinedTuple.1 = "Yahya"
+
+print(predefinedTuple)
+
+let newTuple = (name: "Aysegul", metalica : true)
+print(newTuple.name)
+print(newTuple.metalica)
+
 
