@@ -72,4 +72,29 @@ let newTuple = (name: "Aysegul", metalica : true)
 print(newTuple.name)
 print(newTuple.metalica)
 
+// Guard Let vs If Let
+
+// Guard -> Negative && Confident
+// If -> Positive
+
+let myNumber = "4"
+
+func convertToIntegerGuard (stringInput : String) -> Int {
+    guard let myInteger = Int(stringInput) else {
+        return 0
+    }
+    return myInteger
+}
+
+func convertToIntegerIf (stringInput : String) -> Int {
+    if let myInteger = Int(stringInput) {
+        return myInteger
+    } else {
+        return 0
+    }
+}
+
+print(convertToIntegerIf(stringInput: myNumber))
+print(convertToIntegerGuard(stringInput: myNumber))
+
 
